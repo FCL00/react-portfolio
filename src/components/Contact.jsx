@@ -9,7 +9,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#181818]">
-      <div className="container md:max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row text-start md:py-[68px] space-y-3">
+      <div className="container md:max-w-7xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row text-start md:py-[68px] space-y-3">
         {/* left */}
         <div className="w-full md:w-1/2">
           <form className="container md:max-w-md bg-[#202020] p-6 rounded-lg">
