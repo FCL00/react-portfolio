@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+import heroBackground from "../assets/hero-background.jpg";
 
 export default function Hero() {
   return (
@@ -8,8 +9,7 @@ export default function Hero() {
       id="hero"
       className="bg-[#181818] h-screen flex items-center bg-center bg-cover bg-blend-overlay bg-black/20 bg-fixed py-16"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1483347756197-71ef80e95f73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        backgroundImage: `url(${heroBackground})`,
       }}
     >
       <div className="container px-6 py-16 md:px-16 md:max-w-7xl mx-auto flex flex-col md:text-center space-y-3">
