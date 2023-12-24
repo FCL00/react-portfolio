@@ -20,6 +20,9 @@ export default function Header() {
           <a className="text-white hover:text-emerald-400" href="#projects">
             Projects
           </a>
+          <a className="text-white hover:text-emerald-400" href="#tools">
+            Tools
+          </a>
           <a className="text-white hover:text-emerald-400" href="#experience">
             Experience
           </a>
