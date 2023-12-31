@@ -79,7 +79,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="user_name"
-                className="w-full p-2 border border-none bg-[#121212] rounded-md focus:outline-none  focus:border-emerald-400 focus:border-2 outline-none text-white"
+                className="w-full p-2 bg-[#121212] rounded-md border border-[#121212] focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
                 required
                 autoComplete="false"
               />
@@ -95,7 +95,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="user_email"
-                className="w-full p-2 border border-none bg-[#121212] rounded-md focus:outline-none  focus:border-emerald-400 focus:border-2 outline-none text-white"
+                className="w-full p-2 bg-[#121212] rounded-md border border-[#121212] focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
                 required
                 autoComplete="false"
               />
@@ -112,7 +112,7 @@ export default function Contact() {
                 name="message"
                 rows="4"
                 cols="5"
-                className="w-full p-2 border-none bg-[#121212] rounded-md focus:outline-none focus:border-emerald-500 text-white"
+                className="w-full p-2 border-[#121212] bg-[#121212] rounded-md  focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
                 required
               />
             </div>
