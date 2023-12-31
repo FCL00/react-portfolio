@@ -1,7 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import heroBackground from "../assets/hero-background.jpg";
+import heroBackground from "src/assets/backgrounds/hero.jpg";
 
 export default function Hero() {
   return (

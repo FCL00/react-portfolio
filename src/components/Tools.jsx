@@ -1,22 +1,10 @@
 import ToolsCards from "./partials/ToolsCards";
-// import { tools } from "../data/Data";
-import icons from "./partials/Icons";
+import icons from "src/assets/Icons";
 
 export default function Tools() {
   function displayTools(icon, index) {
     return <ToolsCards key={index} id={index} icon={icon} />;
   }
-
-  // function displayTools(tool, index) {
-  //   return (
-  //     <ToolsCards
-  //       key={index}
-  //       icon={tool.icon}
-  //       color={tool.color}
-  //       label={tool.label}
-  //     />
-  //   );
-  // }
 
   return (
     <section id="tools" className="md:h-screen bg-[#181818]">

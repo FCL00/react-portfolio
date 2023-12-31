@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactLinks from "./partials/ContactLinks";
 import {

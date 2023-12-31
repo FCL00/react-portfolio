@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import SkillCard from "./partials/SkillCard";
-import { skills } from "../data/Data";
-import { animations } from "./partials/animations";
+import { skills } from "src/data/Data";
+import { animations } from "src/assets/animations/animations";
 
 function displayCards(skill, index) {
   return (

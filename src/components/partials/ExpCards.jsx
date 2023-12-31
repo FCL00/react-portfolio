@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 export default function ExpCard(props) {
   return (
     <li className="mb-10 ms-4">

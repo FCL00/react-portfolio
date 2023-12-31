@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Lottie from "lottie-react";
 
-import ContactAnimation from "../assets/animations/ContactAnimation.json";
+import ContactAnimation from "src/assets/animations/ContactAnimation.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";

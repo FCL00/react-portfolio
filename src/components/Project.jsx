@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import react from "react";
-import { projects } from "../data/Data";
+import { projects } from "src/data/Data";
 
 import WorkCards from "./partials/WorkCards";
 

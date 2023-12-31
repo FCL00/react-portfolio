@@ -1,8 +1,5 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-
 import Lottie from "lottie-react";
-import animationData from "../../assets/animations/githubAnimation.json";
+import animationData from "src/assets/animations/githubAnimation.json";
 export default function WorkCards(props) {
   return (
     <>

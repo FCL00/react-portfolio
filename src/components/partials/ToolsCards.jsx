@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 export default function ToolsCards(props) {
   return (
     <div className="hover:p-1 hover:bg-[#303030]  rounded-full">

@@ -1,31 +1,8 @@
-import {
-  faHtml5,
-  faCss3,
-  faJs,
-  faReact,
-  faVuejs,
-  faLaravel,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
-
-const tools = [
-  { icon: faHtml5, color: "#e34c26", label: "HTML5", size: "2xl" },
-  { icon: faCss3, color: "#264de4", label: "CSS3", size: "2xl" },
-  { icon: faJs, color: "#f0db4f", label: "JavaScript", size: "2xl" },
-  { icon: faReact, color: "#00ccff", label: "React.js", size: "2xl" },
-  { icon: faVuejs, color: "#44BA81", label: "Vue.js", size: "2xl" },
-  { icon: faLaravel, color: "#EC271B", label: "Laravel", size: "2xl" },
-  { icon: faPython, color: "#eeff00", label: "Python", size: "2xl" },
-];
-
 const skills = [
-  { skillName: "Web Development", icon: "./skills/marketplace.png" },
-  {
-    skillName: "App Development",
-    icon: "./skills/online-shopping.png",
-  },
-  { skillName: "UI/UX Design", icon: "./skills/design.png" },
-  { skillName: "Cloud Computing", icon: "./skills/edge-computing.png" },
+  { skillName: "Web Development" },
+  { skillName: "App Development" },
+  { skillName: "UI/UX Design" },
+  { skillName: "Cloud Computing" },
 ];
 
 const projects = [
@@ -52,6 +29,25 @@ const projects = [
   },
 ];
 
-const WorkExp = [{ date: "02/" }];
+const WorkExp = [
+  {
+    startDate: "February 20, 2023",
+    endDate: "March 20, 2023",
+    role: "Intern",
+    company: "Philippine Navy",
+  },
+  {
+    startDate: "January 20, 2024",
+    endDate: "",
+    role: "Cloud Computing Instructor",
+    company: "CEU",
+  },
+  {
+    startDate: "January 10, 2024",
+    endDate: "",
+    role: "Frontend developer trainee",
+    company: "",
+  },
+];
 
-export { skills, tools, projects, WorkExp };
+export { skills, projects, WorkExp };
