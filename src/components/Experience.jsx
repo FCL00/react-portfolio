@@ -4,7 +4,16 @@ import { WorkExp } from "src/data/Data";
 
 export default function Experience(props) {
   function displayWorkExp(work, index) {
-    return <ExpCard key={index} />;
+    return (
+      <ExpCard
+        key={index}
+        startDate={work.startDate}
+        endDate={work.endDate}
+        role={work.role}
+        company={work.company}
+        task={work.task}
+      />
+    );
   }
   return (
     <section id="experience" className="md:h-screen bg-[#202020]">
