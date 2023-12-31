@@ -47,8 +47,8 @@ const WorkExp = [
   {
     startDate: "January 10, 2024",
     endDate: "",
-    role: "Frontend Developer Trainee",
-    task: "As a Frontend Developer Trainee at OneCodeCamp, I am undergoing comprehensive training in modern frontend technologies. I actively participate in hands-on coding sessions, collaborate with senior developers on projects, and engage in continuous learning to enhance my skills in web development.",
+    role: "MERN Fullstack Developer Trainee",
+    task: "As a Fullstack Developer Trainee at OneCodeCamp, I am undergoing comprehensive training in modern frontend technologies. I actively participate in hands-on coding sessions, collaborate with senior developers on projects, and engage in continuous learning to enhance my skills in web development.",
     company: "OneCodeCamp",
   },
 ];
