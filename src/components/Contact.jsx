@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import Lottie from "lottie-react";
 import Swal from "sweetalert2";
 import "@sweetalert2/theme-dark/dark.css";
-
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "src/data/keys/key";
 // components
 import ContactAnimation from "src/assets/animations/ContactAnimation.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,37 +15,30 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_pzo4tc8",
-        "template_vddmuwb",
-        form.current,
-        "WZ6gwj45YSNkDLQ-V"
-      )
-      .then(
-        (result) => {
-          // console.log(result.text);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        // console.log(result.text);
 
-          Swal.fire({
-            icon: "success",
-            title: "Message sent successfully!",
-            text: "I will get back to you as soon as possible.",
-          });
+        Swal.fire({
+          icon: "success",
+          title: "Message sent successfully!",
+          text: "I will get back to you as soon as possible.",
+        });
 
-          e.target.reset();
-        },
-        (error) => {
-          // console.log(error.text);
+        e.target.reset();
+      },
+      (error) => {
+        // console.log(error.text);
 
-          Swal.fire({
-            icon: "error",
-            title: "Error!",
-            text: "Failed to send message. Please try again.",
-          });
+        Swal.fire({
+          icon: "error",
+          title: "Error!",
+          text: "Failed to send message. Please try again.",
+        });
 
-          e.target.reset();
-        }
-      );
+        e.target.reset();
+      }
+    );
   };
 
   return (
