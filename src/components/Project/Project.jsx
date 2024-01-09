@@ -1,7 +1,7 @@
 import react from "react";
 import { projects } from "src/data/Data";
 import "./Project.css";
-import WorkCards from "../partials/WorkCards";
+import WorkCards from "./WorkCards";
 
 export default function Project() {
   function displayProjects(item, index) {
