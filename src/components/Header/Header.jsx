@@ -1,15 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
   const [expand, setExpand] = useState(false);
+  const [currentPage, setCurrentPage] = useState("");
+
+  useEffect(() => {
+    // Listen for changes in the hash part of the URL
+    const handleHashChange = () => {
+      setCurrentPage(window.location.hash);
+    };
+
+    // Initial page load
+    setCurrentPage(window.location.hash);
+
+    // Set up the event listener
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   function expandHandler() {
     setExpand((prevState) => {
       return !prevState;
     });
-    console.log(expand);
   }
   return (
     <nav className="bg-[#121212] py-4 shadow-xl fixed w-full z-10">
@@ -37,10 +55,14 @@ export default function Header() {
           }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col py-2 space-y-2 md:py-0 md:space-y-0  md:p-0 md:flex-row">
+          <ul className="flex flex-col py-2 space-y-2 md:py-0 md:space-y-0 md:p-0 md:flex-row">
             <li>
               <a
-                className="block py-2 px-3 text-white md:py-0 hover:text-emerald-400 hover:bg-[#181818] rounded-md"
+                className={`block py-2 px-3  md:py-0 rounded-md ${
+                  currentPage === "#about"
+                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
+                    : "text-white"
+                }`}
                 href="#about"
                 aria-current="page"
               >
@@ -49,7 +71,11 @@ export default function Header() {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-white md:py-0 hover:text-emerald-400 hover:bg-[#181818] rounded-md"
+                className={`block py-2 px-3  md:py-0 rounded-md ${
+                  currentPage === "#projects"
+                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
+                    : "text-white"
+                }`}
                 href="#projects"
               >
                 Projects
@@ -57,7 +83,11 @@ export default function Header() {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-white md:py-0 hover:text-emerald-400 hover:bg-[#181818] rounded-md"
+                className={`block py-2 px-3  md:py-0 rounded-md ${
+                  currentPage === "#tools"
+                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
+                    : "text-white"
+                }`}
                 href="#tools"
               >
                 Tools
@@ -65,7 +95,11 @@ export default function Header() {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-white md:py-0 hover:text-emerald-400 hover:bg-[#181818] rounded-md"
+                className={`block py-2 px-3  md:py-0 rounded-md ${
+                  currentPage === "#experience"
+                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
+                    : "text-white"
+                }`}
                 href="#experience"
               >
                 Experience
@@ -73,7 +107,11 @@ export default function Header() {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-white md:py-0 hover:text-emerald-400 hover:bg-[#181818] rounded-md"
+                className={`block py-2 px-3  md:py-0 rounded-md ${
+                  currentPage === "#contact"
+                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
+                    : "text-white"
+                }`}
                 href="#contact"
               >
                 Contact
