@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Project from "./components/Project/Project";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
-import Tools from "./components/Tools";
+import Tools from "./components/Tools/Tools";
 
 export default function App() {
   return (

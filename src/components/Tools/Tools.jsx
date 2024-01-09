@@ -1,14 +1,14 @@
-import ToolsCards from "./partials/ToolsCards";
+import ToolsCards from "./ToolsCards";
 import icons from "src/assets/Icons";
-
+import "./Tool.css";
 export default function Tools() {
   function displayTools(icon, index) {
     return <ToolsCards key={index} id={index} icon={icon} />;
   }
 
   return (
-    <section id="tools" className="md:h-screen bg-[#181818]">
-      <div className="container md:max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-3  text-start py-16 md:py-32 space-y-3">
+    <section id="tools" className="tools-section">
+      <div className="tools-container">
         <h1 className="text-emerald-500 text-3xl md:text-5xl font-bold md:text-center w-full">
           Tools That I Used
         </h1>
