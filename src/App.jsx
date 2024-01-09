@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Introduction from "./components/Introduction/Introduction";
 import Footer from "./components/Footer/Footer";
-import Project from "./components/Project";
+import Project from "./components/Project/Project";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Tools from "./components/Tools";

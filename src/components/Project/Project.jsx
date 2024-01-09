@@ -1,7 +1,7 @@
 import react from "react";
 import { projects } from "src/data/Data";
-
-import WorkCards from "./partials/WorkCards";
+import "./Project.css";
+import WorkCards from "../partials/WorkCards";
 
 export default function Project() {
   function displayProjects(item, index) {
@@ -24,7 +24,7 @@ export default function Project() {
         backgroundImage: "url('')",
       }}
     >
-      <div className="container md:max-w-7xl mx-auto px-6 py-16 md:py-32 md:text-center space-y-3">
+      <div className="project-container">
         <h1 className="text-emerald-500 text-3xl  md:text-5xl font-bold ">
           My Recent Works
         </h1>
@@ -35,7 +35,7 @@ export default function Project() {
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </p>
-        <div className="container md:max-w-7xl mx-auto px-6 pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3">
+        <div className="project-grid-container">
           {projects.map(displayProjects)}
         </div>
         <div className="text-center">

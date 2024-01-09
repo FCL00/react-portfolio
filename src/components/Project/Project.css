@@ -1,0 +1,7 @@
+.project-container {
+  @apply container md:max-w-7xl mx-auto px-6 py-16 md:py-32 md:text-center space-y-3;
+}
+
+.project-grid-container {
+  @apply container md:max-w-7xl mx-auto px-6 pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3;
+}
