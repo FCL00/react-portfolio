@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ContactLinks from "./partials/ContactLinks";
+import ContactLinks from "./ContactLinks";
 import {
   faLinkedin,
   faSquareFacebook,
@@ -18,6 +18,8 @@ const icons = [
   faGithub,
 ];
 
+import "./Footer.css";
+
 export default function Footer() {
   function displayIcons(item, index) {
     return <ContactLinks key={index} icon={item} />;
@@ -25,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#121212] text-white py-8">
-      <div className="container md:max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between ">
+      <div className="footer-container">
         <div className="mb-4 md:mb-0">
           <h2 className="text-2xl text-emerald-500 font-semibold">Fernando </h2>
           <p className="text-sm">Building a better future.</p>

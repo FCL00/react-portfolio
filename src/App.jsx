@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Introduction from "./components/Introduction";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Project from "./components/Project";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
