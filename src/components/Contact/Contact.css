@@ -1,0 +1,19 @@
+.contact-container {
+  @apply container md:max-w-7xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row text-start md:py-[68px] space-y-3;
+}
+
+.contact-form-container {
+  @apply container md:max-w-md bg-[#202020] p-6 rounded-lg;
+}
+
+.contact-h1 {
+  @apply text-emerald-500 text-3xl  md:text-5xl font-bold py-4;
+}
+
+.contact-input {
+  @apply w-full p-2 bg-[#121212] rounded-md border border-[#121212] focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white;
+}
+
+.contact-form-text-area {
+  @apply w-full p-2 border-[#121212] bg-[#121212] rounded-md  focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white;
+}

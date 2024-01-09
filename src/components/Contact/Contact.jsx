@@ -8,6 +8,7 @@ import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "src/data/keys/key";
 import ContactAnimation from "src/assets/animations/ContactAnimation.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import "./Contact.css";
 
 export default function Contact() {
   const form = useRef();
@@ -43,17 +44,15 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-[#181818]">
-      <div className="container md:max-w-7xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row text-start md:py-[68px] space-y-3">
+      <div className="contact-container">
         {/* left */}
         <div className="w-full md:w-1/2">
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="container md:max-w-md bg-[#202020] p-6 rounded-lg"
+            className="contact-form-container"
           >
-            <h1 className="text-emerald-500 text-3xl  md:text-5xl font-bold py-4">
-              Contact Me
-            </h1>
+            <h1 className="contact-h1">Contact Me</h1>
             <div className="flex flex-col mb-4">
               <p className="text-white">
                 Let's collaborate and turn your vision into reality! Whether
@@ -72,7 +71,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="user_name"
-                className="w-full p-2 bg-[#121212] rounded-md border border-[#121212] focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
+                className="contact-input"
                 required
                 autoComplete="false"
               />
@@ -88,7 +87,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="user_email"
-                className="w-full p-2 bg-[#121212] rounded-md border border-[#121212] focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
+                className="contact-input"
                 required
                 autoComplete="false"
               />
@@ -105,7 +104,7 @@ export default function Contact() {
                 name="message"
                 rows="4"
                 cols="5"
-                className="w-full p-2 border-[#121212] bg-[#121212] rounded-md  focus:outline-none focus:border-emerald-400 focus:border-2 outline-none text-white"
+                className="contact-form-text-area"
                 required
               />
             </div>
