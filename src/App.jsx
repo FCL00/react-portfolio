@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Introduction from "./components/Introduction";
 import Footer from "./components/Footer/Footer";
