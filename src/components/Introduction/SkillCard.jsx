@@ -5,8 +5,8 @@ import Lottie from "lottie-react";
 export default function SkillCard(props) {
   return (
     <>
-      <div className="w-full md:w-1/4 flex flex-col justify-around h-full text-white  p-4 rounded-xl]">
-        <div className="flex justify-center mb-4 ]">
+      <div className="skill-card">
+        <div className="skill-card-header">
           <Lottie
             className="h-[20rem] w-48"
             animationData={props.animationData}

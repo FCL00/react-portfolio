@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import SkillCard from "./partials/SkillCard";
+import SkillCard from "./SkillCard";
 import { skills } from "src/data/Data";
 import { animations } from "src/assets/animations/animations";
-
+import "./Introduction.css";
 function displayCards(skill, index) {
   return (
     <SkillCard
@@ -16,8 +16,8 @@ function displayCards(skill, index) {
 
 export default function Introduction() {
   return (
-    <section className="md:h-screen bg-[#181818]" id="about">
-      <div className="container md:max-w-7xl mx-auto px-6 md:px-9 flex flex-col text-start md:text-center py-16 md:py-32 space-y-3">
+    <section className="intro-section" id="about">
+      <div className="intro-container">
         <h1 className="text-emerald-500 text-3xl  md:text-5xl font-bold ">
           About Me
         </h1>
@@ -30,9 +30,7 @@ export default function Introduction() {
           responsive, and visually appealing interfaces that leave a lasting
           impression.
         </p>
-        <div className="pt-8 px-6 flex flex-col md:flex-row gap-4">
-          {skills.map(displayCards)}
-        </div>
+        <div className="card-container">{skills.map(displayCards)}</div>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Introduction from "./components/Introduction";
+import Introduction from "./components/Introduction/Introduction";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Project";
 import Experience from "./components/Experience/Experience";
