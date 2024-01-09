@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-[#181818]">
+    <section id="contact" className="md:h-screen bg-[#181818]">
       <div className="contact-container">
         {/* left */}
         <div className="w-full md:w-1/2">
@@ -102,7 +102,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                rows="4"
+                rows="10"
                 cols="5"
                 className="contact-form-text-area"
                 required

@@ -19,7 +19,7 @@ export default function Project() {
   return (
     <section
       id="projects"
-      className="bg-[#202020]"
+      className="projects bg-[#202020]"
       style={{
         backgroundImage: "url('')",
       }}
