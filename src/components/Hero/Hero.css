@@ -1,0 +1,11 @@
+.hero-section {
+  @apply bg-[#181818] h-screen flex items-center bg-center bg-cover bg-blend-overlay bg-black/20 bg-fixed py-16;
+}
+
+.hero-container {
+  @apply container px-6 py-16 md:px-16 md:max-w-7xl mx-auto flex flex-col md:text-center space-y-3;
+}
+
+.hero-h1 {
+  @apply text-white text-5xl  md:text-7xl font-bold;
+}

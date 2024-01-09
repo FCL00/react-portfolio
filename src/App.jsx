@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero/Hero";
 import Introduction from "./components/Introduction";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Project";
