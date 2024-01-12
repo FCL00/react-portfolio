@@ -20,7 +20,7 @@ const projects = [
     title: "Shoppy Admin Dashboard",
     desc: "This project is a React application that uses Recharts for data visualization and Tailwind CSS for styling. It includes a LineChart component, responsive layout, and a sample data visualization example.",
     img: Shoppy,
-    link: "react-admin-beta-rust.vercel.app",
+    link: "https://react-admin-beta-rust.vercel.app",
     tags: ["react.js", "tailwindcss"],
   },
   {
