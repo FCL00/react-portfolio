@@ -1,3 +1,6 @@
+import Shoppie from "src/assets/works/Shoppie.png";
+import Shoppy from "src/assets/works/Shoppy.png";
+import Collection from "src/assets/works/Collection.png";
 const skills = [
   { skillName: "Web Development" },
   { skillName: "App Development" },
@@ -7,24 +10,24 @@ const skills = [
 
 const projects = [
   {
-    title: "QuizGuard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam quos architecto temporibus eveniet dolorum voluptate officiis nulla ipsum eius.",
-    img: "./assets/",
-    link: "...",
+    title: "Shoppie",
+    desc: "This Laravel-based website is designed to provide a seamless shopping experience with a modern and responsive user interface. ",
+    img: Shoppie,
+    link: "https://github.com/FCL00/shoppie",
     tags: ["react.js", "tailwindcss"],
   },
   {
-    title: "QuizGuard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam quos architecto temporibus eveniet dolorum voluptate officiis nulla ipsum eius.",
-    img: "./assets/",
-    link: "...",
+    title: "Shoppy Admin Dashboard",
+    desc: "This project is a React application that uses Recharts for data visualization and Tailwind CSS for styling. It includes a LineChart component, responsive layout, and a sample data visualization example.",
+    img: Shoppy,
+    link: "react-admin-beta-rust.vercel.app",
     tags: ["react.js", "tailwindcss"],
   },
   {
-    title: "QuizGuard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam quos architecto temporibus eveniet dolorum voluptate officiis nulla ipsum eius.",
-    img: "./assets/",
-    link: "...",
+    title: "Daily UI",
+    desc: "A collection of UI designs created as a part of the Daily UI Challenge. Each design in this collection reflects a commitment to creativity, user-centric and aesthetics",
+    img: Collection,
+    link: "https://github.com/FCL00/Daily-UI-Challenge",
     tags: ["react.js", "tailwindcss"],
   },
 ];
@@ -33,9 +36,9 @@ const WorkExp = [
   {
     startDate: "February 20, 2023",
     endDate: "March 20, 2023",
-    role: "Web Developer",
-    task: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi error quia adipisci, voluptatum veritatis porro repudiandae officiis blanditiis ex.",
-    company: "Company A",
+    role: "Intern",
+    task: "As an intern at the Philippine Navy, I actively contributed to cybersecurity initiatives. My responsibilities included conducting security assessments, identifying vulnerabilities, and implementing measures to enhance the overall cybersecurity posture.",
+    company: "Philippine Navy",
   },
   {
     startDate: "February 20, 2023",

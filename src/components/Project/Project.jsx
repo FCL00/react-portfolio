@@ -11,6 +11,7 @@ export default function Project() {
         desc={item.desc}
         img={item.img}
         tag={item.tags}
+        link={item.link}
         key={index}
       />
     );
@@ -40,7 +41,8 @@ export default function Project() {
         </div>
         <div className="text-center">
           <a
-            href=""
+            href="https://github.com/FCL00"
+            target="_blank"
             className="text-emerald-500 text-center hover:text-emerald-400"
           >
             View More
