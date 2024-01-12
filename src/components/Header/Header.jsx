@@ -7,20 +7,23 @@ export default function Header() {
   const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {
-    // Listen for changes in the hash part of the URL
-    const handleHashChange = () => {
-      setCurrentPage(window.location.hash);
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
+
+        if (scrollPosition >= top && scrollPosition < bottom) {
+          setCurrentPage(`#${section.id}`);
+        }
+      });
     };
 
-    // Initial page load
-    setCurrentPage(window.location.hash);
-
-    // Set up the event listener
-    window.addEventListener("hashchange", handleHashChange);
-
-    // Clean up the event listener on component unmount
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
