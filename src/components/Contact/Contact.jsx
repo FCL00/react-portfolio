@@ -102,7 +102,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                rows="10"
+                rows="5"
                 cols="5"
                 className="contact-form-text-area"
                 required
