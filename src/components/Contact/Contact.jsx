@@ -73,7 +73,7 @@ export default function Contact() {
                 name="user_name"
                 className="contact-input"
                 required
-                autoComplete="false"
+                autoComplete="off"
               />
             </div>
             <div className="mb-4 space-y-2">
@@ -89,7 +89,7 @@ export default function Contact() {
                 name="user_email"
                 className="contact-input"
                 required
-                autoComplete="false"
+                autoComplete="off"
               />
             </div>
             <div className="mb-4 space-y-2">
@@ -105,6 +105,7 @@ export default function Contact() {
                 rows="5"
                 cols="5"
                 className="contact-form-text-area"
+                autoComplete="off"
                 required
               />
             </div>
