@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;300;400;500;700&family=Signika:wght@300;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+  background-color: #121212 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.glass-effect{
+    background: rgba(0,0,0, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  */
+}
+
+.black-gradient {
+    background: #000000;
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    );
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); 
+  }
+
