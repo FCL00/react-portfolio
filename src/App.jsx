@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Introduction from "./components/Introduction/Introduction";
+import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Project/Project";
 import Experience from "./components/Experience/Experience";
@@ -15,10 +15,9 @@ export default function App() {
     <>
       <Header />
       <Hero />
-      <Introduction />
+      <About />
       <Project />
       <Tools />
-      <Experience />
       <Contact />
       <Footer />
     </>
