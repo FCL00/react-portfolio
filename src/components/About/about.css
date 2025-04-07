@@ -1,0 +1,19 @@
+.intro-section {
+  @apply md:h-screen bg-[#121212];
+}
+
+.intro-container {
+  @apply container flex flex-col px-6 py-16 mx-auto space-y-3 md:max-w-7xl md:px-9 text-start md:text-center md:py-32;
+}
+
+.card-container {
+  @apply flex flex-col gap-4 px-6 pt-8 md:flex-row;
+}
+
+.skill-card {
+  @apply flex flex-col justify-around w-full h-full p-4 text-white md:w-1/4 rounded-xl;
+}
+
+.skill-card-header {
+  @apply flex justify-center mb-4;
+}
