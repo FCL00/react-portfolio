@@ -1,0 +1,28 @@
+.heroImage{
+  -webkit-mask-image: linear-gradient(black, black 50%);
+  mask-image: linear-gradient( black, black 50%);
+}
+
+.radialMask {
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+}
+
+/* 
+.radialMask{
+  mask-image: radial-gradient(circle at center, black, transparent);
+} */
