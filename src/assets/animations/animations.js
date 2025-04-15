@@ -1,8 +1,8 @@
-import WebDevelopmentAnimation from "src/assets/animations/WebDevelopment.json";
-import AppDevelopment from "src/assets/animations/AppDevelopment.json";
-import UiAnimation from "src/assets/animations/uiAnimation.json";
-import ServerAnimation from "src/assets/animations/ServerAnimation.json";
-import ContactAnimation from "src/assets/animations/ContactAnimation.json";
+import WebDevelopmentAnimation from "@/assets/animations/WebDevelopment.json";
+import AppDevelopment from "@/assets/animations/AppDevelopment.json";
+import UiAnimation from "@/assets/animations/uiAnimation.json";
+import ServerAnimation from "@/assets/animations/ServerAnimation.json";
+import ContactAnimation from "@/assets/animations/ContactAnimation.json";
 
 const animations = [
   WebDevelopmentAnimation,
