@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ContactLinks from "./ContactLinks";
 import {
   faLinkedin,
   faSquareFacebook,
@@ -8,33 +6,33 @@ import {
   faDiscord,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-
-const icons = [
-  faLinkedin,
-  faSquareFacebook,
-  faViber,
-  faTelegram,
-  faDiscord,
-  faGithub,
-];
-
+import SocialIcon from "./SocialIcon";
 import "./Footer.css";
 
-export default function Footer() {
-  function displayIcons(item, index) {
-    return <ContactLinks key={index} icon={item} />;
-  }
+const contactIcons = [
+  { icon: faLinkedin, url: "https://www.linkedin.com/in/fernando-lagahit-524095292/", label: "LinkedIn" },
+  { icon: faSquareFacebook, url: "https://www.facebook.com/fernando.lagahit.52", label: "Facebook" },
+  { icon: faViber, url: "#", label: "Viber" },
+  { icon: faTelegram, url: "#", label: "Telegram" },
+  { icon: faDiscord, url: "#", label: "Discord" },
+  { icon: faGithub, url: "https://github.com/FCL00", label: "GitHub" },
+];
 
+export default function Footer() {
   return (
-    <footer className="bg-[#121212] text-white py-8">
-      <div className="footer-container">
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-2xl text-emerald-500 font-semibold">Fernando </h2>
-          <p className="text-sm">Building a better future.</p>
-        </div>
-        <div className="flex space-x-1 items-center">
-          {icons.map(displayIcons)}
-        </div>
+    <footer className="flex flex-col items-center justify-between gap-4 px-6 py-6 text-center md:flex-row md:justify-between footer-container">
+      <p className="text-sm text-[#696969]">
+        © {new Date().getFullYear()} Fernando Lagahit. All rights reserved.
+      </p>
+      <div className="flex items-center gap-3">
+        {contactIcons.map((item, index) => (
+          <SocialIcon
+            key={index}
+            icon={item.icon}
+            url={item.url}
+            label={item.label}
+          />
+        ))}
       </div>
     </footer>
   );
