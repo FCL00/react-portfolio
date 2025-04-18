@@ -33,16 +33,16 @@ export default function Header() {
     });
   }
   return (
-    <nav className="bg-[#121212] py-4 shadow-xl fixed w-full z-10">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6">
+    <nav className="fixed z-40 w-full py-4 glass-effect">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-6 mx-auto">
         {/* left  */}
         <div className="text-white hover:text-emerald-400">
-          <a href="#hero" className="text-emerald-500 font-extrabold">
+          <a href="#hero" className="font-extrabold text-white">
             Fernando
           </a>
         </div>
         {/* button */}
-        <div className="flex md:hidden  md:order-2 space-x-3 md:space-x-0">
+        <div className="flex space-x-3 md:hidden md:order-2 md:space-x-0">
           <button
             aria-controls="navbar-sticky"
             aria-expanded={expand}
@@ -63,8 +63,8 @@ export default function Header() {
               <a
                 className={`block py-2 px-3  md:py-0 rounded-md ${
                   currentPage === "#about"
-                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
-                    : "text-white"
+                    ? "text-white bg-[#181818] md:bg-transparent"
+                    : " text-white md:text-[#696969]"
                 }`}
                 href="#about"
                 aria-current="page"
@@ -76,8 +76,8 @@ export default function Header() {
               <a
                 className={`block py-2 px-3  md:py-0 rounded-md ${
                   currentPage === "#projects"
-                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
-                    : "text-white"
+                    ? "text-white bg-[#181818] md:bg-transparent"
+                    : " text-white md:text-[#696969]"
                 }`}
                 href="#projects"
               >
@@ -88,32 +88,32 @@ export default function Header() {
               <a
                 className={`block py-2 px-3  md:py-0 rounded-md ${
                   currentPage === "#tools"
-                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
-                    : "text-white"
+                    ? "text-white bg-[#181818] md:bg-transparent"
+                    : " text-white md:text-[#696969]"
                 }`}
                 href="#tools"
               >
                 Tools
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 className={`block py-2 px-3  md:py-0 rounded-md ${
                   currentPage === "#experience"
-                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
-                    : "text-white"
+                    ? "text-white bg-[#181818] md:bg-transparent"
+                    : "text-[#696969] md:text-[#696969]"
                 }`}
                 href="#experience"
               >
                 Experience
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 className={`block py-2 px-3  md:py-0 rounded-md ${
                   currentPage === "#contact"
-                    ? "text-emerald-500 md:text-emerald-500 bg-[#181818] md:bg-transparent"
-                    : "text-white"
+                    ? "text-white  bg-[#181818] md:bg-transparent"
+                    : "text-white md:text-[#696969]"
                 }`}
                 href="#contact"
               >
