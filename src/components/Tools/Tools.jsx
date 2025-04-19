@@ -1,19 +1,20 @@
 import ToolsCards from "./ToolsCards";
-import icons from "src/assets/Icons";
-import "./Tool.css";
-export default function Tools() {
-  function displayTools(icon, index) {
-    return <ToolsCards key={index} id={index} icon={icon} />;
-  }
+import Icons from "@/assets/icons";
+// import "./Tool.css";
 
+
+export default function Tools() {
   return (
-    <section id="tools" className="tools-section">
-      <div className="tools-container">
-        <h1 className="text-emerald-500 text-3xl md:text-5xl font-bold md:text-center w-full">
-          Tools That I Used
+    <section id="tools" className="md:min-h-screen lg:min-h-[850px]">
+      <div className="px-6 py-16 mx-auto md:max-w-7xl text-start md:text-center md:pt-32">
+        {/* Title */}
+        <h1 className="w-full mb-6 text-3xl font-bold text-white md:text-5xl">
+          Tools That I Use
         </h1>
-        <div className="text-white md:text-center w-full">
-          <p>
+
+        {/* Description */}
+        <div className="w-full max-w-4xl mx-auto mb-10 text-white">
+          <p className="text-[#606060]">
             In my toolkit, I leverage a diverse array of tools including React,
             Node.js, Laravel, Git, and more. With a focus on clean code and
             efficient solutions, I create dynamic and visually appealing digital
@@ -21,7 +22,13 @@ export default function Tools() {
             tool contributes to crafting seamless and innovative applications.
           </p>
         </div>
-        {icons.map(displayTools)}
+
+        {/* Tool Cards Grid */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {Icons.map((icon, index) => (
+            <ToolsCards key={index} icon={icon} />
+          ))}
+        </div>
       </div>
     </section>
   );
