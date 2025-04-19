@@ -1,6 +1,6 @@
 import react from "react";
 import ExpCard from "./ExpCards";
-import { WorkExp } from "src/data/Data";
+import { WorkExp } from "@/constants/Data";
 import "./Experience.css";
 export default function Experience(props) {
   function displayWorkExp(work, index) {
