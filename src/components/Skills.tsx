@@ -52,7 +52,7 @@ export default function Skills() {
             <li>Nestjs</li>
             <li>Java / SpringBoot</li>
             <li>Prisma</li>
-            <li>JWT auth</li>
+            <li>Better Auth / RBAC</li>
           </ul>
         </div>
         <div className="px-5 py-8 md:px-8 bg-ink">
