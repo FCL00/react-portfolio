@@ -9,10 +9,10 @@ export default function Footer() {
           © <span id="year">{currentYear}</span> Fernando
         </p>
         <span className="flex gap-6">
-          <a className="hover:text-fg" href="#">
+          <a className="hover:text-fg" href="https://github.com/FCL00">
             GitHub
           </a>
-          <a className="hover:text-fg" href="#">
+          <a className="hover:text-fg" href="https://www.linkedin.com/in/fernando-lagahit-524095292/" target="_blank">
             LinkedIn
           </a>
         </span>

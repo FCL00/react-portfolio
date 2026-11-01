@@ -33,7 +33,8 @@ export default function Hero() {
             Explore projects
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/fernando-lagahit-524095292/"
+            target="_blank"
             className="meta inline-flex h-11 items-center border border-line px-5 text-fg transition-colors hover:border-fg"
           >
             LinkedIn ↗
