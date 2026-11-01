@@ -33,6 +33,12 @@
   --container-frame: 68rem;
 }
 
+@layer base {
+  button, a {
+    cursor: pointer;
+  }
+}
+
 /* Reusable type styles */
 @utility display-xl {
   font-family: var(--font-display);
