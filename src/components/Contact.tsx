@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm";
+
 export default function Contact() {
   return (
     <section
@@ -43,49 +45,7 @@ export default function Contact() {
           </ul>
         </div>
         <div className="px-5 py-10 md:col-span-7 md:px-8">
-          <form id="contact-form" className="grid gap-5">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <label className="meta grid gap-2">
-                Name
-                <input
-                  required
-                  name="name"
-                  autoComplete="off"
-                  className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
-                />
-              </label>
-              <label className="meta grid gap-2">
-                Email
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  autoComplete="off"
-                  className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
-                />
-              </label>
-            </div>
-            <label className="meta grid gap-2">
-              Message
-              <textarea
-                required
-                minLength={10}
-                rows={5}
-                name="message"
-                className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
-                style={{ height: "182px"}}
-              ></textarea>
-            </label>
-            <button className="meta h-12 text-ink bg-fg transition-colors hover:bg-signal">
-              Send message
-            </button>
-            <p
-              id="form-status"
-              role="status"
-              aria-live="polite"
-              className="meta text-signal"
-            ></p>
-          </form>
+          <ContactForm/>
         </div>
       </div>
     </section>
