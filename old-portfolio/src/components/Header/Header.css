@@ -1,6 +1,0 @@
-.isOpen {
-}
-
-.isClose {
-  @apply hidden md:block space-x-2;
-}
