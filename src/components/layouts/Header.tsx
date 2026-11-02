@@ -8,7 +8,7 @@ const navigationLinks = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#work" },
   { label: "Contact", href: "#contact" },
-  { label: "Resume", href: "#" },
+  // { label: "Resume", href: "#" },
 ];
 
 export default function Header() {
