@@ -1,21 +1,44 @@
-
 "use client";
 
 import { ContactInput, ContactInputSchema } from "@/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { env } from "@/lib/env/client";
+import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
+    reset,
   } = useForm<ContactInput>({
     resolver: zodResolver(ContactInputSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
   });
 
-  const onSubmit = async (payload: ContactInput) => {
-    console.log(payload);
+  const onSubmit = async (data: ContactInput) => {
+    try {
+      await emailjs.send(
+        env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        data,
+        {
+          publicKey: env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        }
+      );
+
+      reset();
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast.error("Failed to send message. Please try again.");
+    }
   };
 
   return (
@@ -26,7 +49,7 @@ export default function ContactForm() {
       noValidate
     >
       <div className="grid gap-5 sm:grid-cols-2">
-        <div className="grid gap-2">
+        <div className="grid gap-2 relative">
           <label htmlFor="name" className="meta">
             Name
           </label>
@@ -37,16 +60,17 @@ export default function ContactForm() {
             autoComplete="name"
             className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
             aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "name-error" : undefined}
           />
 
           {errors.name && (
-            <p className="text-xs text-red-500">
+            <p id="name-error" role="alert" className="text-xs text-red-500 absolute -bottom-5">
               {errors.name.message}
             </p>
           )}
         </div>
 
-        <div className="grid gap-2">
+        <div className="grid gap-2 relative">
           <label htmlFor="email" className="meta">
             Email
           </label>
@@ -58,17 +82,18 @@ export default function ContactForm() {
             autoComplete="email"
             className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
             aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
           />
 
           {errors.email && (
-            <p className="text-xs text-red-500">
+            <p id="email-error" role="alert" className="text-xs text-red-500 absolute -bottom-5">
               {errors.email.message}
             </p>
           )}
         </div>
       </div>
 
-      <div className="grid gap-2">
+      <div className="grid gap-2 relative my-2">
         <label htmlFor="message" className="meta">
           Message
         </label>
@@ -77,13 +102,15 @@ export default function ContactForm() {
           id="message"
           {...register("message")}
           rows={5}
-          style={{ height: "182px" }}
-          className="w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
+          className="h-45.5 w-full border border-line bg-surface px-4 py-3 font-sans text-base normal-case tracking-normal text-fg transition-colors focus:border-signal focus:outline-none"
           aria-invalid={!!errors.message}
+          aria-describedby={
+            errors.message ? "message-error" : undefined
+          }
         />
 
         {errors.message && (
-          <p className="text-xs text-red-500">
+          <p id="message-error" role="alert" className="text-xs text-red-500 absolute -bottom-5">
             {errors.message.message}
           </p>
         )}
@@ -96,13 +123,6 @@ export default function ContactForm() {
       >
         {isSubmitting ? "Sending..." : "Send message"}
       </button>
-
-      <p
-        id="form-status"
-        role="status"
-        aria-live="polite"
-        className="meta text-signal"
-      />
     </form>
   );
 }
