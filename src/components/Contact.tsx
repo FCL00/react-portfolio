@@ -1,4 +1,5 @@
-import ContactForm from "./ContactForm";
+import ContactForm from "@/components/ContactForm";
+import CopyEmail from "@/components/CopyEmail";
 
 export default function Contact() {
   return (
@@ -24,21 +25,16 @@ export default function Contact() {
       </div>
       <div className="mt-16 grid border-t border-line md:grid-cols-12">
         <div className="space-y-6 border-b border-line px-5 py-10 md:col-span-5 md:border-b-0 md:border-r md:px-8">
-          <a
-            href="#"
-            className="block break-all font-display text-2xl font-bold tracking-tight transition-colors hover:text-signal"
-          >
-            flagahit00@gmail.com
-          </a>
+          <CopyEmail/>
           <p className="meta">Philippines</p>
           <ul className="meta space-y-3 text-fg">
             <li>
-              <a className="transition-colors hover:text-signal" href="#">
+              <a className="transition-colors hover:text-signal" href="https://github.com/FCL00" target="_blank">
                 GitHub ↗
               </a>
             </li>
             <li>
-              <a className="transition-colors hover:text-signal" href="#">
+              <a className="transition-colors hover:text-signal" href="https://www.facebook.com/fernando.lagahit.52" target="_blank">
                 LinkedIn ↗
               </a>
             </li>
