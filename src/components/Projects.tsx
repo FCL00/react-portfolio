@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="work"
-      className="border-t border-line"
+      className="border-t border-line scroll-mt-12"
       aria-labelledby="work-title"
     >
       <div className="meta flex items-center justify-between border-b border-line px-5 py-3 md:px-8">
@@ -20,11 +20,9 @@ export default function Projects() {
           My Recent <span className="text-signal">Works</span>.
         </h2>
         <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          These projects showcase web applications I've built, the technologies
+          I've used, and the problems each one addresses. Explore the live demos
+          and source code where available.
         </p>
       </div>
 
@@ -71,6 +69,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://next-crm-kappa.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live ↗
                 </a>
@@ -78,6 +77,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://github.com/FCL00/NextCRM"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub ↗
                 </a>
@@ -93,7 +93,7 @@ export default function Projects() {
           <div className="shot relative overflow-hidden border-y border-line ph aspect-4/3">
             <div className="flex h-full items-center justify-center p-6 text-center">
               <Link
-                className="h-full w-full object-fit"
+                className="h-full w-full object-cover"
                 href="https://github.com/FCL00/Typeflow"
               >
                 <Image
@@ -123,6 +123,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://typeflow-eta-five.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live ↗
                 </a>
@@ -130,6 +131,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://github.com/FCL00/Typeflow"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub ↗
                 </a>
@@ -144,19 +146,15 @@ export default function Projects() {
           </div>
           <div className="shot relative overflow-hidden border-y border-line ph aspect-4/3">
             <div className="flex h-full items-center justify-center p-6 text-center">
-              <Link
-                className="h-full w-full object-fit"
-                href="https://github.com/FCL00/Typeflow"
-              >
-                <Image
-                  src="/assets/jobhunt.webp"
-                  width={1200}
-                  height={800}
-                  sizes="100vw"
-                  alt="Jobhunt Landing Page"
-                  loading="lazy"
-                />
-              </Link>
+              <Image
+                className="h-full w-full object-cover"
+                src="/assets/jobhunt.webp"
+                width={1200}
+                height={800}
+                sizes="100vw"
+                alt="Jobhunt Landing Page"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="grid gap-6 px-5 py-8 md:px-8 ">
@@ -197,7 +195,7 @@ export default function Projects() {
                 width={1200}
                 height={800}
                 sizes="100vw"
-                alt="Typeflow Landing Page"
+                alt="MakaMura chicken ordering application"
                 loading="lazy"
               />
             </div>
@@ -221,6 +219,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://makamura.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live ↗
                 </a>
@@ -228,6 +227,7 @@ export default function Projects() {
                   className="transition-colors hover:text-signal"
                   href="https://github.com/FCL00/Makamura"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub ↗
                 </a>
@@ -295,7 +295,7 @@ export default function Projects() {
                 width={1200}
                 height={800}
                 sizes="100vw"
-                alt="Typeflow Landing Page"
+                alt="Premier ERP and CRM dashboard"
                 loading="lazy"
               />
             </div>

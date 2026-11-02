@@ -2,18 +2,18 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className=""
+      className="scroll-mt-12"
       aria-labelledby="skills-title"
     >
       <div className="meta flex items-center justify-between border-b border-line px-5 py-3 md:px-8">
         <span>
           04 / <span className="text-fg">Skills</span>
         </span>
-        <span className="hidden sm:inline">What I work with</span>
+        <span className="hidden sm:inline">Tools</span>
       </div>
       <div className="px-5 py-section md:px-8">
         <h2 id="skills-title" className="display-lg">
-          What's in the <span className="text-signal">toolbox</span>.
+          What I <span className="text-signal">work</span> with.
         </h2>
       </div>
       <div
@@ -52,7 +52,7 @@ export default function Skills() {
             <li>Nestjs</li>
             <li>Java / SpringBoot</li>
             <li>Prisma</li>
-            <li>Better Auth / RBAC</li>
+            <li>Better Auth</li>
           </ul>
         </div>
         <div className="px-5 py-8 md:px-8 bg-ink">

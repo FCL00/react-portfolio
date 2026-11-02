@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="border-t border-line"
+      className="border-t border-line scroll-mt-12"
       aria-labelledby="contact-title"
     >
       <div className="meta flex items-center justify-between border-b border-line px-5 py-3 md:px-8">
@@ -29,12 +29,12 @@ export default function Contact() {
           <p className="meta">Philippines</p>
           <ul className="meta space-y-3 text-fg">
             <li>
-              <a className="transition-colors hover:text-signal" href="https://github.com/FCL00" target="_blank">
+              <a className="transition-colors hover:text-signal" href="https://github.com/FCL00" target="_blank" rel="noopener noreferrer">
                 GitHub ↗
               </a>
             </li>
             <li>
-              <a className="transition-colors hover:text-signal" href="https://www.facebook.com/fernando.lagahit.52" target="_blank">
+              <a className="transition-colors hover:text-signal" href="https://www.facebook.com/fernando.lagahit.52" target="_blank" rel="noopener noreferrer">
                 LinkedIn ↗
               </a>
             </li>
