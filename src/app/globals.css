@@ -15,7 +15,7 @@
 @theme {
   /* Colors */
   --color-ink: var(--ink);      /* page background */
-  --color-surface: var(--surface): ;  /* inputs, image placeholders */
+  --color-surface: var(--surface);  /* inputs, image placeholders */
   --color-line: var(--line);     /* all borders and dividers */
   --color-fg: var(--foreground);       /* primary text */
   --color-muted: var(--muted);    /* secondary text, metadata */
